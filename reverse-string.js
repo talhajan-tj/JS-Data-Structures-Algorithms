@@ -1,9 +1,12 @@
 function reverseString(str) {
-  let reversed;
-  for (let i = 0; i > str.length; i--) {
-    reversed = str[i];
+  let reversed = "";
+  // reversed = str.split("").reverse().join("");
+  // return reversed;
+
+  for (let i = str.length - 1; i >= 0; i--) {
+    reversed += str[i];
   }
   return reversed;
 }
 
-console.log(reverseString("string"));
+console.log(reverseString("string is reversed"));
