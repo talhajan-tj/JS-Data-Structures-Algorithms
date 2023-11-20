@@ -1,7 +1,7 @@
 function palindrome(str) {
-  let palindrome = "";
-  palindrome = str.reverse();
-  console.log(palindrome);
+  const formateStr = str.toLowerCase().replace(/[^a-z0-9]/g, "");
+  const reversedStr = formateStr.split("").reverse().join("");
+  return formateStr === reversedStr;
 }
 
-console.log(palindrome("madam"));
+console.log(palindrome("maDam"));
