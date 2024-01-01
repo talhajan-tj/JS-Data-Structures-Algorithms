@@ -9,5 +9,5 @@ function uniqueChars(str) {
   }
   return true;
 }
-console.log(uniqueChars("stringr"));
+console.log(uniqueChars("string"));
 console.log(uniqueChars("talha"));
